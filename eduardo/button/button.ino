@@ -1,3 +1,4 @@
+int i = 0;
 
 void setup() {
 
@@ -8,9 +9,23 @@ void setup() {
 
 void loop() { 
   if( digitalRead(2)==LOW ) {
-    digitalWrite(13,HIGH);
-    delay(1000);
+    i=0;
+    while(i<5){
+      turnOn();
+      i++;
+    }
   }else{
-    digitalWrite(13,LOW);
+    turnOff();
   }
 }
+
+void turnOn() {
+  digitalWrite(13,HIGH);
+  delay(100);
+  digitalWrite(13,LOW);
+  delay(100);
+}
+
+void turnOff() {
+  digitalWrite(13,LOW);
+} 

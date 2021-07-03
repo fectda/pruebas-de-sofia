@@ -6,17 +6,17 @@ void setup() {
 void loop() {
  if(digitalRead(2)==LOW) {
   digitalWrite(13,HIGH);
-delay(100);
+delay(5000);
 digitalWrite(13,LOW);
-delay(100);
+delay(5000);
 digitalWrite(13,HIGH);
-delay(100);
+delay(1000);
 digitalWrite(13,LOW);
-delay(100);
+delay(1000);
 digitalWrite(13,HIGH);
-delay(100);
+delay(500);
 digitalWrite(13,LOW);
-delay(100);
+delay(500);
 digitalWrite(13,HIGH);
 delay(100);
 digitalWrite(13,LOW);
